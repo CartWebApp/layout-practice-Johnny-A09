@@ -5,6 +5,11 @@ body{
     margin:0;
     padding:0;
 }
+main{
+display:flex;
+align-items: center;
+flex-flow:column;
+}
 nav{
     background-color:#383E4C;
     padding: 3px;
@@ -20,6 +25,7 @@ nav ul{
     padding:0;
     overflow:hidden;
     align-items:center;
+    height: 100px;
 }
 li {
     padding: 20px 20px;
@@ -62,7 +68,9 @@ section.hero h3{
 }
 figure.card{
     background-color:#F2F2F2;
-    width:30%
+    width:30%;
+    margin:0;
+
 }
 div.card{
 display:flex;
@@ -71,15 +79,69 @@ justify-content: center;
 flex-wrap:wrap;
 border:54px solid transparent;
 }
+figure.card{
+    width:25%;
+    margin:10px;
+}
 figure.left,
 figure.right{
     background-color:#F2F2F2;
 
 }
-div.l-r{
+figure>img{
+    width:100%;
+}
+.l-r{
     display:flex;
-    width: 100%;
-    justify-content: space-around;
-    flex-wrap:wrap;
-    border:54px solid transparent;
+    justify-content: space-between;
+    padding:20px 54px;
+}
+div{
+    display:flex;
+    justify-content: center;
+    max-width:1280px;
+}
+.green{
+    color:green;
+    padding-left:15px;
+    padding-right:15px;
+}
+.blue{
+    color:blue;
+    padding-left:15px;
+    padding-right:15px;
+}
+.red{
+    color:#666666;
+    padding-left:15px;
+    padding-right:15px;
+}
+.c-t{
+    padding-left:15px;
+    padding-right:15px;
+    color:#666666;
+}
+a.green{
+    background-color:green;
+    color:white;
+    text-decoration: none;
+    border:none;
+    padding:11px 15px;
+    text-align:center;
+}
+a.blue{
+    background-color:blue;
+    color:white;
+    text-decoration: none;
+    border:none;
+    padding:11px 15px;
+    text-align:center;
+}
+a.red{
+    background-color:red;
+    color:white;
+    text-decoration: none;
+    border:none;
+    padding:11px 15px;
+    text-align:center;
 }
