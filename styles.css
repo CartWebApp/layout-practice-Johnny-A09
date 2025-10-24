@@ -1,5 +1,6 @@
 *{ 
-    font-family: calibri;
+    font-family: open sans;
+    font-weight:lighter;
 }
 body{
     margin:0;
@@ -217,14 +218,14 @@ figure.cards2{
     width:20.5%;
     margin:15px;
     background-color:#F2F2F2;
-    height:480px;
+    height:525px;
     color:#666666;
 }
 .column{
     background-color:#F2F2F2;
     margin:15px;
     color:#666666;
-    height:600px;
+    height:630px;
 }
 .cards2>p{
     padding-left:15px;
@@ -255,6 +256,7 @@ figure.cards2{
     width:50px;
     border: 1px solid #CCCCCC;
     margin-left:15px;
+    height:600px;
 }
 .contact{
     display:flex;
@@ -264,6 +266,14 @@ figure.cards2{
     text-align:center;
     height:534px;
     justify-content:center;
+}
+.input-container{
+    display:flex;
+    flex-flow:column wrap;
+    align-items:space-between;
+    justify-content:space-between;
+    gap:12px;
+    width:45%;
 }
 .contact>h1{
     font-weight:lighter;
@@ -275,22 +285,26 @@ figure.cards2{
     margin:0px 302px;
     padding:10px 15px;
     border-radius:6px;
+    width:30%;
+    align-self:center;
 }
 form {
     display:flex;
-    flex-wrap:wrap;
+    flex-flow:row wrap;
     align-items: center;
-    justify-content:center;
+    justify-content:space-between;
     gap: 10px;
-    margin:10px 302px;
+    width:31.5%;
+    margin:10px 0px;
+    align-self:center;
 }
 input{
     background-color:rgba(255, 255, 255, 0.5);
     color:rgba(0,0,0,1);
     border:none;
-    padding:8px 15px;
+    padding:8px 0px;
     border-radius:6px;
-    width:47.5%;
+    width:100%;
 }
 textarea{
     background-color:rgba(255, 255, 255, 0.5);
@@ -298,8 +312,43 @@ textarea{
     border:none;
     padding:8px 15px;
     border-radius:6px;
-    width:47.5%;
+    width:45%;
+    align-self:flex-start;
+    height:120px;
 }
 form ::placeholder{
     color:rgba(0,0,0,1);
+}
+button{
+    background-color:#000000;
+    color:white;
+    border:1px solid #CCCCCC;
+    padding:11px 15px;
+    border-radius:12px;
+    width:95.7px;
+    cursor:pointer;
+    height:43.28px;
+    margin-left:288px;
+}
+footer{
+    text-align:center;
+    color:#3f3f3f;
+    font-style:italic;
+}
+footer>h4{
+    color:#666666;
+    border-bottom:#F2F2F2 1px solid;
+    padding-bottom: 25px;
+}
+footer>a{
+    display:flex;
+    justify-content:flex-end;
+    text-align:center;
+    width:100%;
+    justify-self: flex-end;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+footer>p{
+    font-style: normal;
 }
