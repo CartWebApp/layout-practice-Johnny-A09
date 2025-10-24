@@ -67,17 +67,20 @@ section.hero h3{
     text-shadow: #000000 1px 1px;
 }
 figure.card{
+    display:flex;
+    flex-flow:column;
+    align-items:center;
     background-color:#F2F2F2;
     width:30%;
     margin:0;
-
+    height:430px;
 }
 div.card{
-display:flex;
-width: 100%;
-justify-content: center;
-flex-wrap:wrap;
-border:54px solid transparent;
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap:wrap;
+    border:54px solid transparent;
 }
 figure.card{
     width:25%;
@@ -91,30 +94,29 @@ figure.right{
 figure>img{
     width:100%;
 }
-.l-r{
-    display:flex;
-    justify-content: space-between;
-    padding:20px 54px;
-}
 div{
     display:flex;
     justify-content: center;
     max-width:1280px;
 }
-.green{
-    color:green;
+.green-h{
+    color:#178A27;
     padding-left:15px;
     padding-right:15px;
+    width:40%;
+    align-self:flex-start;
 }
-.blue{
-    color:blue;
+.blue-h{
+    color:#1686C1;
     padding-left:15px;
     padding-right:15px;
+    align-self:flex-start;
 }
-.red{
+.red-h{
     color:#666666;
     padding-left:15px;
     padding-right:15px;
+    align-self:flex-start;
 }
 .c-t{
     padding-left:15px;
@@ -122,26 +124,182 @@ div{
     color:#666666;
 }
 a.green{
-    background-color:green;
+    background-color:#178A27;
     color:white;
     text-decoration: none;
     border:none;
     padding:11px 15px;
     text-align:center;
+    border-radius:6px;
+    width:40%;
 }
 a.blue{
-    background-color:blue;
+    background-color:#1686C1;
     color:white;
     text-decoration: none;
     border:none;
     padding:11px 15px;
     text-align:center;
+    border-radius:6px;
+    width:40%;
 }
 a.red{
-    background-color:red;
+    background-color:#852406;
     color:white;
     text-decoration: none;
     border:none;
     padding:11px 15px;
     text-align:center;
+    border-radius:6px;
+    width:40%
+}
+.l-r{
+    color:#666666;
+    padding:20px 54px;
+    display:flex;
+    justify-content: space-between;
+    height:62vh;
+}
+.columns{
+    text-align:center;
+}
+.cs-p{
+    padding-left:15px;
+    padding-right:15px;
+}
+.cc-container{
+    display:flex;
+    flex-flow:row wrap;
+}
+.c-right{
+    background-color:white;
+    color:#666666;
+    padding:12px;
+    align-self:flex-end;
+    margin-right: 50px;
+    width:100px;
+    text-align:center;
+    text-decoration:none;
+    border-radius:10px;
+    border:1px solid #CCCCCC;
+}
+.right{
+    display:flex;
+    flex-flow:column;
+}
+.services{
+    display:flex;
+    flex-flow:column;
+    background-image: url(images/img13.jpg);
+    background-size:cover;
+    color:white;
+    text-align:center;
+    height:200px;
+    justify-content:center;
+    align-items:center;
+    padding:20px 307px;
+    margin-bottom:15px;
+}
+.services>h1{
+    font-weight: lighter;
+    text-shadow:#666666 1px 1px;
+}
+div.card2{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-between;
+    width:1044px;
+}
+figure.cards2{
+    display:flex;
+    flex-flow:column;
+    align-items:center;
+    width:20.5%;
+    margin:15px;
+    background-color:#F2F2F2;
+    height:480px;
+    color:#666666;
+}
+.column{
+    background-color:#F2F2F2;
+    margin:15px;
+    color:#666666;
+    height:600px;
+}
+.cards2>p{
+    padding-left:15px;
+    padding-right:15px;
+}
+.column>p,
+.column>h3{
+    padding-left:15px;
+    padding-right:15px;
+}
+.cards2>a{
+    background-color: white;
+    color:#666666;
+    text-decoration:none;
+    border-radius:6px;
+    padding:8px 15px;
+    text-align:center;
+    width:50px;
+    border: 1px solid #CCCCCC;
+}
+.column>a{
+    background-color: white;
+    color:#666666;
+    text-decoration:none;
+    border-radius:6px;
+    padding:8px 15px;
+    text-align:center;
+    width:50px;
+    border: 1px solid #CCCCCC;
+    margin-left:15px;
+}
+.contact{
+    display:flex;
+    flex-flow:column;
+    background-image:url(images/img14.jpg);
+    background-size:cover;
+    text-align:center;
+    height:534px;
+    justify-content:center;
+}
+.contact>h1{
+    font-weight:lighter;
+    color:white;
+    text-shadow:#333333 2px 2px;
+}
+.contact>p{
+    background-color: rgba(255, 255, 255, 0.5);
+    margin:0px 302px;
+    padding:10px 15px;
+    border-radius:6px;
+}
+form {
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content:center;
+    gap: 10px;
+    margin:10px 302px;
+}
+input{
+    background-color:rgba(255, 255, 255, 0.5);
+    color:rgba(0,0,0,1);
+    border:none;
+    padding:8px 15px;
+    border-radius:6px;
+    width:47.5%;
+}
+textarea{
+    background-color:rgba(255, 255, 255, 0.5);
+    color:rgba(0,0,0,1);
+    border:none;
+    padding:8px 15px;
+    border-radius:6px;
+    width:47.5%;
+}
+form ::placeholder{
+    color:rgba(0,0,0,1);
 }
