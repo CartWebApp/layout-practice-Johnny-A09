@@ -7,9 +7,9 @@ body{
     padding:0;
 }
 main{
-display:flex;
-align-items: center;
-flex-flow:column;
+    display:flex;
+    align-items: center;
+    flex-flow:column;
 }
 nav{
     background-color:#383E4C;
@@ -74,7 +74,7 @@ figure.card{
     background-color:#F2F2F2;
     width:30%;
     margin:0;
-    height:430px;
+    height:50vh;
 }
 div.card{
     display:flex;
@@ -159,7 +159,7 @@ a.red{
     padding:20px 54px;
     display:flex;
     justify-content: space-between;
-    height:62vh;
+    height:65vh;
 }
 .columns{
     text-align:center;
@@ -225,7 +225,7 @@ figure.cards2{
     background-color:#F2F2F2;
     margin:15px;
     color:#666666;
-    height:630px;
+    height:65vh;
 }
 .cards2>p{
     padding-left:15px;
